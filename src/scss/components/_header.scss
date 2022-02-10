@@ -1,1 +1,27 @@
-//
+.header {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        padding-top: 0.5rem;
+        a {
+            color: var(--color-dark-blue);
+        }
+    }
+    &__nav {
+
+    }
+    &__contacts {
+        display: flex;
+    }
+    &__number {
+        display: flex;
+        align-items: center;
+        margin: 0 1em;
+    }
+    &__email {
+        display: flex;
+        align-items: center;
+        margin: 0 1em;
+    }
+}
