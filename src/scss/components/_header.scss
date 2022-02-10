@@ -1,4 +1,6 @@
 .header {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 16px;
+    //top
     &__top {
         display: flex;
         justify-content: space-between;
@@ -23,5 +25,73 @@
         display: flex;
         align-items: center;
         margin: 0 1em;
+    }
+    // bottom
+    &__bottom {
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 240px;
+        height: 80px;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__btn-cat {
+        width: 126px;
+        height: 40px;
+        flex: none;
+    }
+    &__search {
+        flex: 1;
+        max-width: 45rem;
+        padding: 0 3rem 0 1rem;
+        display: flex;
+        align-items: center;
+        input {
+            border: none;
+            outline: none;
+            border: 2px solid var(--color-primary);
+            padding: 2px 0.75rem;
+            border-radius: 8px 0px 0px 8px;
+            border-right: 0px;
+            // border-color: var(--color-primary);
+            line-height: 2rem;
+            width: 570px;
+        }
+        button {
+            -webkit-appearance: none;
+            border-radius: 0px 8px 8px 0px;
+            border: 0px;
+            background: var(--color-primary);
+            stroke: var(--color-primary-text);
+            width: 4rem;
+            height: 40px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &__btns {
+        display: flex;
+        .btn {
+            padding: 0 1em;
+            flex-direction: column;
+            line-height: 1;
+            font-size: 12px;
+            svg {
+                font-size: 24px;
+            }
+        }
     }
 }
