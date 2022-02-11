@@ -25,4 +25,35 @@
             width: 1.5em;
         }
     }
+    &_drop-sort {
+        border: 1px solid transparent;
+        background: transparent;
+        color: rgb(141, 150, 162);
+        fill: rgb(141, 150, 162);
+        stroke: rgb(141, 150, 162);
+        border-color: rgb(141, 150, 162);
+        border-radius: 0.5em;
+        font-weight: bold;
+        line-height: 1.15;
+        transition: 0.3s ease;
+        svg {
+            font-size: 24px;
+            margin-right: 0.5em;;
+        }
+        &:hover {
+            background-color: rgba(141, 150, 162,0.08);
+        }
+    }
+    &_more {
+        background-color: rgb(233, 235, 238);
+        color: rgb(64, 64, 79);
+        fill: rgb(64, 64, 79);
+        stroke: rgb(64, 64, 79);
+        line-height: 1.15;
+        font-weight: bold;
+        border-radius: 0.5em;
+        &:hover {
+            background-color: rgb(218, 219, 221);
+        }
+    }
 }
