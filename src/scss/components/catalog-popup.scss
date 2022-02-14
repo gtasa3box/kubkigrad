@@ -15,6 +15,9 @@
     &.active {
         display: block;
     }
+    &.fix-head {
+        top: 122px;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
@@ -44,6 +47,8 @@
             }
             div {
                 max-width: 208px;
+                display: flex;
+                align-items: center;
             }
         }
         &-child {
@@ -71,12 +76,17 @@
                     flex: 1;
                     a {
                         display: inline-block;
-                        margin-bottom: 2.25rem;
+                        margin-bottom: 1.5rem;
                         font-weight: bold;
                         transition: 0.3s ease;
                         &:hover {
                             color: var(--color-primary);
                         }
+                    }
+                    .small-nav {
+                        margin-bottom: 0;
+                        padding: 0.2rem 0;
+                        font-weight: 500;
                     }
                 }
             }

@@ -2,7 +2,7 @@
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 16px;
     background-color: white;
     position: relative;
-    z-index: 3;
+    z-index: 4;
     //top
     &__top {
         display: flex;
@@ -105,6 +105,24 @@
             svg {
                 font-size: 24px;
             }
+        }
+    }
+    &__fantom {
+        height: 122px;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &.fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        .header__top {
+            display: none;
+        }
+        .header__logo {
+            height: 50px;
         }
     }
 }

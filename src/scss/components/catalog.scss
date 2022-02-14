@@ -10,4 +10,53 @@
             height: 50px;
         }
     }
+    &__sort {
+        position: relative;
+        &-block {
+            display: none;
+            position: absolute;
+            z-index: 3;
+            margin-top: 1em;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 21px;
+            background: var(--c-general-background-1);
+            border-radius: 12px;
+            padding: 1em;
+            &.active {
+                display: block;
+            }
+            a {
+                display: block;
+                cursor: pointer;
+                padding: 0.5em 0px;
+                white-space: nowrap;
+                position: relative;
+                padding-left: 20px;
+                color: var(--color-text);
+                fill: var(--color-text);
+                stroke: var(--color-text);
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 500;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 1em;
+                    height: 1em;
+                    border-radius: 2em;
+                    border: 2px solid var(--color-dark-blue);
+                    transition: all 0.2s ease-in-out 0s;
+                    left: -5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &.active {
+                    &:before {
+                        border-color: var(--color-primary);
+                        border-width: 5px;
+                    }
+                }
+            }
+        }
+    }
 }
