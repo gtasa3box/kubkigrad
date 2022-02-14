@@ -32,4 +32,31 @@
         left: 0;
         cursor: pointer;
     }
+    &_all {
+        .card-cat__img {
+            max-height: 280px;
+        }
+        .card-cat__price {
+            line-height: 1.15;
+            margin: 27px 0 8px;
+            color: var(--color-primary);
+            fill: var(--color-primary);
+            stroke: var(--color-primary);
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .card-cat__name {
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .card-cat__btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+        }
+    }
 }
