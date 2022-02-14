@@ -1,5 +1,8 @@
 .header {
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 16px;
+    background-color: white;
+    position: relative;
+    z-index: 3;
     //top
     &__top {
         display: flex;
@@ -46,6 +49,9 @@
     &__content {
         display: flex;
         align-items: center;
+        padding-right: 7rem;
+        margin-left: 1em;
+        width: 80%;
     }
     &__btn-cat {
         width: 126px;
@@ -58,6 +64,7 @@
         padding: 0 3rem 0 1rem;
         display: flex;
         align-items: center;
+        width: 100%;
         input {
             border: none;
             outline: none;
@@ -67,7 +74,7 @@
             border-right: 0px;
             // border-color: var(--color-primary);
             line-height: 2rem;
-            width: 570px;
+            width: 100%;
         }
         button {
             -webkit-appearance: none;

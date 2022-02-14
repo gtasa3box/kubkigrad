@@ -24,6 +24,18 @@
             margin-right: 0.5rem;
             height: 1.5em;
             width: 1.5em;
+            transition: 0.3s ease;
+        }
+        .cross {
+            display: none;
+        }
+        &.active {
+            .cross {
+                display: block;
+            }
+            .burger {
+                display: none;
+            }
         }
     }
     &_drop-sort {
