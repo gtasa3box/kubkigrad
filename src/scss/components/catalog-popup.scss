@@ -105,4 +105,8 @@
     &.active {
         display: block;
     }
+    &.active2 {
+        display: block;
+        z-index: 5;
+    }
 }

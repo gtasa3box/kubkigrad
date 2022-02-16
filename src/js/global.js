@@ -52,3 +52,10 @@ $(function() {
     });
 });
 
+//fixed-basket
+$(".fixed-basket__icon").click(function(){
+    $(this).toggleClass("active");
+    $('.fixed-basket__body').toggleClass("active");
+    $('.shadow-block').toggleClass("active2");
+    $('body').toggleClass("hidden");
+});
