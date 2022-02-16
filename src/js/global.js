@@ -1,12 +1,12 @@
 // catalog-btn
-$('.btn_catalog').click(function(){
-    $('.btn_catalog').toggleClass("active");
+$('#catalog-btn').click(function(){
+    $(this).toggleClass("active");
     $('.catalog-popup').toggleClass("active");
     $('.shadow-block').toggleClass("active");
 });
 
 $('.shadow-block').click(function(){
-    $('.btn_catalog').toggleClass("active");
+    $('#catalog-btn').toggleClass("active");
     $('.catalog-popup').toggleClass("active");
     $('.shadow-block').toggleClass("active");
 });
