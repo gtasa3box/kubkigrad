@@ -3,6 +3,9 @@
     right: 0;
     z-index: 20;
     top: 0;
+    @media (max-width:1000px) {
+        display: none;
+    }
     &__icon {
         cursor: pointer;
         position: absolute;

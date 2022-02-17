@@ -14,7 +14,7 @@
     &__img {
         border-radius: 8px;
         max-height: 196px;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center center;
     }
     &__title {
